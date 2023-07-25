@@ -16,19 +16,19 @@
 }
 
 .mrk{
-    color: white;
+    color: black;
 }
 
 .mrk1{
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 ._mrk{
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    /* border-top: 1px solid white; */
+    /* border-bottom: 1px solid white; */
     border-style: dashed;
     
 }
@@ -61,11 +61,12 @@
 }
 
 label{
-    color: white;
+    color: black;
 }
 
 input{
     padding: 5px;
+    border: 0.5px solid grey;
 }
 
 ._link > a {
@@ -92,6 +93,8 @@ input{
    position: absolute;
    bottom: 0;
 }
+
+
 
 .mrk1{
     margin-bottom: 25px;

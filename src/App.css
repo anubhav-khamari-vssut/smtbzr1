@@ -2,10 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
 html{
   /* background-image: linear-gradient(45deg, rgb(0, 0, 255), white); */
-  background-color: black;
+  background-color: rgb(209, 153, 153);
   /* Full height */
   height: 100%;
 
@@ -15,6 +14,18 @@ html{
   background-size: cover;
 }
 
-html, body {
- 
+.bold{
+  margin-top: 15px;
+  border: 1px solid black;
+  font-weight: 900;
+}
+
+.backgrnd-grey{
+  background-color: rgba(235, 234, 234, 0.26);
+}
+
+.headX{
+  font-family: 'Anton', sans-serif;;
+  font-size: 30px;
+  color: rgb(206, 147, 0);
 }

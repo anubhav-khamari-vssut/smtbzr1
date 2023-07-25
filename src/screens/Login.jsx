@@ -1,8 +1,8 @@
 import { onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { auth } from '../firebase';
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Navbar from '../components/Navbar';
+import Navbarx from '../comp/Navbarx';
 import "../styles/Login.css";
 
 function Login() {
@@ -11,9 +11,18 @@ function Login() {
     const [email, setemail] = useState('');
     const [password, setpassword] = useState('');
 
+    
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if (!user) {
+                navigate('/login')
+            }
+        });
+        }, [auth])
+
     onAuthStateChanged(auth, (user) => {
         if (user) {
-            navigate('/');
+            navigate('/admin');
         }
     });
 
@@ -37,7 +46,7 @@ function Login() {
     }
     return (
         <>
-            <Navbar />
+            <Navbarx />
 
             <div className="loginboxContainer">
                 <div className="loginbox">
@@ -55,14 +64,13 @@ function Login() {
                                 <button type='submit' className='submitBtn'>Log in</button>
                             </span>
                         </div>
-                        <div className="_link"> <a href="/signup"><b>Create An Account</b></a></div>
-                    </form>
+                      </form>
                 </div>
             </div>
 
             <marquee className="mrk">
              <span className="_mrk">
-                <b>&nbsp;  CoolAge n Thrill &nbsp; | &nbsp; <b>CoolAge Presents <i>ChatX : </i></b> Pseudonomous Intra-Campus Chatbox &nbsp; | &nbsp; <b><i>Vibin'</i></b> &nbsp; </b>
+                <b>&nbsp; <b><i>Sumeet Bazaar, Nuapada</i></b>&nbsp; </b>
              </span>
             </marquee>
             {/* <button onClick={logout}>LogOut</button> */}

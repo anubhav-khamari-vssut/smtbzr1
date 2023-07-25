@@ -2,20 +2,15 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAewI7Ea1pdUqipe6nhF0FdHucbnm0pZhQ",
-  authDomain: "coolageofficial.firebaseapp.com",
-  projectId: "coolageofficial",
-  storageBucket: "coolageofficial.appspot.com",
-  messagingSenderId: "872546420614",
-  appId: "1:872546420614:web:89f02b84db0f9b2193ce07",
-  measurementId: "G-VPJXNFTBMX"
+  apiKey: "AIzaSyBXIB1ZXdsKCOmoJ2eHt7vMHvlnes0oWxs",
+  authDomain: "sumeetbazaarnuapada.firebaseapp.com",
+  projectId: "sumeetbazaarnuapada",
+  storageBucket: "sumeetbazaarnuapada.appspot.com",
+  messagingSenderId: "175049065125",
+  appId: "1:175049065125:web:023d63627ed4c45851834c"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
