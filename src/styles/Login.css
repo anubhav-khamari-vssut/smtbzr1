@@ -1,0 +1,112 @@
+.loginboxContainer{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginbox{
+    font-family: 'Roboto Mono', monospace;
+    border: 0.5px solid black;
+}
+
+.loginForm{
+    margin: 5%;
+}
+
+.mrk{
+    color: white;
+}
+
+.mrk1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._mrk{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-style: dashed;
+    
+}
+
+.mk2{
+    color: #1bff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+.submit{
+    border: 0.25px solid black;
+    background: black;
+}
+
+.submitBtn{
+    margin: 1%;
+    color: white;
+}
+
+._link{
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+label{
+    color: white;
+}
+
+input{
+    padding: 5px;
+}
+
+._link > a {
+    color: #1bff00;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.__link > a {
+    color: #1bff00;
+}
+
+.ask{
+    margin: 15%;
+}
+
+.white{
+    color: white;    
+    font-size: 25px;
+}
+
+.mrk{
+    margin-bottom: 25px;
+   position: absolute;
+   bottom: 0;
+}
+
+.mrk1{
+    margin-bottom: 25px;
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   justify-content:center
+}
+
+
+/* @media only screen and (max-width: 700px) {
+    .mrk{
+        margin-bottom: 25px;
+       position: absolute;
+       bottom: 0;
+    }
+  } */

@@ -1,0 +1,84 @@
+.msgboxContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  color: white;
+}
+
+.chatBg{
+  /* background-image: url(./@.png); */
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+
+.msgBox{
+  border: 1px solid #201f4933;
+  width: 90%;
+  border-style: groove;
+}
+
+.displayMessage,.messageForm{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.displayMessage{
+  height: 400px;
+  
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 600px) {
+  .displayMessage{
+    height: 550px;
+    
+    overflow-y: scroll;
+  }
+}
+
+.newMessage{
+  width: 70%;
+}
+
+.messageForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.messageForm > input{
+  background: black;
+  color: white;
+  font-size: 20px;
+}
+
+.submit{
+  background-color: rgba(0, 0, 255, 0.288) !important;
+  border-left: 0.5px solid white;
+  color: white;
+}
+
+.invite{
+  color: white;
+  margin-left: 20%;
+}
+
+.msg_{
+  /* background: #f7f7f7d8; */
+  padding: 5px;
+  font-size: 20px;
+}
+
+.msg{
+margin: 10px;
+}
+
+.user{
+  color: #1bff00;
+}
